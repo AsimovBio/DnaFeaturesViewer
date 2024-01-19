@@ -92,8 +92,8 @@ class BokehPlottableMixin:
 
         # BUILD THE PLOT ()
         plot = figure(
-            width=width,
-            height=height,
+            min_width=width,
+            min_height=height,
             tools=tools,
             x_range=Range1d(0, self.sequence_length),
             y_range=Range1d(-1, max_y + 1),
